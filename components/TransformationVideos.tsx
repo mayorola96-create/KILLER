@@ -40,10 +40,10 @@ function VideoCard({
       <div className="video-media">
         <LazyYouTubeVideo id={id} label={label} eyebrow="Conversion transformation" prompt="Tap to play" />
       </div>
-      <div className="video-body">
-        <span>0{index + 1}</span>
+      <div className="video-body video-caption-transformation">
+        <span className="video-caption-number">0{index + 1}</span>
         <h3>{label}</h3>
-        <p>{description}</p>
+        <p className="video-caption-desc">{description}</p>
         <a className="video-source-link" href={url} target="_blank" rel="noreferrer" aria-label={`Open ${label} on YouTube`}>
           Open on YouTube <ExternalLink size={14} aria-hidden="true" />
         </a>

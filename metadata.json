@@ -1,0 +1,6 @@
+{
+  "name": "Sage Partners",
+  "description": "Sage Partners identifies and resolves ecommerce problems affecting conversions, customer trust, retention, search visibility and profitable growth.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -54,10 +54,10 @@ export function AiseoBrief() {
                 <div className="video-media aiseo-video-media">
                   <LazyYouTubeVideo {...video} prompt="Watch AISEO brief" />
                 </div>
-                <div className="video-body">
-                  <span>0{index + 1}</span>
-                  <h3>{video.label}</h3>
-                  <p>Short explanation from Sage Partners.</p>
+                <div className="video-body video-caption-sage">
+                  <span className="video-caption-number">0{index + 1}</span>
+                  <h3 className="video-caption-title">{video.label}</h3>
+                  <p className="video-caption-desc">Short explanation from Sage Partners.</p>
                 </div>
               </Reveal>
             ))}
