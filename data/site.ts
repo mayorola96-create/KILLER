@@ -3,6 +3,7 @@ export const navItems = [
   { label: "How We Help", href: "#how-we-help" },
   { label: "AISEO", href: "#aiseo" },
   { label: "Transformations", href: "#transformations" },
+  { label: "Spotlight", href: "#spotlight" },
   { label: "Team", href: "#team" },
   { label: "Contact", href: "#contact" }
 ] as const;

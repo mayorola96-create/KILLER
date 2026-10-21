@@ -430,6 +430,77 @@ img { max-width: 100%; }
   .footer-social { justify-content: flex-end; }
 }
 
+/* Client Spotlight: Avari Beauty */
+.spotlight-section {
+  position: relative;
+  background: var(--sage-dark);
+  color: var(--paper);
+  isolation: isolate;
+  border-top: 1px solid rgba(255, 253, 243, 0.12);
+  border-bottom: 1px solid rgba(255, 253, 243, 0.12);
+}
+.spotlight-glass-card {
+  position: relative;
+  border: 1px solid rgba(255, 253, 243, 0.14);
+  border-radius: 24px;
+  background: rgba(255, 253, 243, 0.04);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.spotlight-glass-card:hover {
+  border-color: rgba(200, 211, 175, 0.35);
+}
+.spotlight-quote-card {
+  position: relative;
+  border: 1px solid rgba(135, 245, 2, 0.28);
+  border-radius: 20px;
+  background: radial-gradient(circle at 10% 10%, rgba(135, 245, 2, 0.06), transparent 50%), rgba(255, 253, 243, 0.03);
+  padding: 28px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+.spotlight-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #c8d3af;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(200, 211, 175, 0.4);
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  word-break: break-all;
+}
+.spotlight-link:hover {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+.spotlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(200, 211, 175, 0.12);
+  border: 1px solid rgba(200, 211, 175, 0.25);
+  color: #c8d3af;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.spotlight-short-container {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  aspect-ratio: 9 / 16;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 253, 243, 0.2);
+  background: #191f14;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
 @media (max-width: 639px) {
   .site-header .container-wide { width: 100%; padding-inline: 20px; }
   .site-header .menu-trigger { width: 46px; flex: 0 0 46px; }

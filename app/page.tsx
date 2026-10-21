@@ -1,4 +1,5 @@
 import { AiseoBrief } from "@/components/AiseoBrief";
+import { AvariSpotlight } from "@/components/AvariSpotlight";
 import { CollaborationNotice } from "@/components/CollaborationNotice";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -64,6 +65,7 @@ export default function Home() {
           <SolutionAccordion />
           <AiseoBrief />
           <TransformationVideos />
+          <AvariSpotlight />
           <TeamSection />
           <CollaborationNotice />
           <ContactSection />
