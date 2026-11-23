@@ -4,7 +4,8 @@ export const navItems = [
   { label: "AISEO", href: "#aiseo" },
   { label: "Transformations", href: "#transformations" },
   { label: "Spotlight", href: "#spotlight" },
-  { label: "Team", href: "#team" },
+  { label: "Leadership", href: "#team" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" }
 ] as const;
 
@@ -100,9 +101,32 @@ export const aiseoVideos = [
 ] as const;
 
 export const team = [
-  { name: "Michael Olajire", role: "Lead Developer", image: "/images/team/michael-olajire.webp", fiverr: "https://www.fiverr.com/michae1_olajire" },
-  { name: "Timi Oladunjoye", role: "Project Manager", image: "/images/team/timi-oladunjoye.jpg", email: "mailto:oladunjoyemalik5@gmail.com" },
-  { name: "DeTruth", role: "Project Manager and Marketing Specialist", initials: "DT", fiverr: "https://www.fiverr.com/dreal_detruth" },
-  { name: "Michy", role: "Backend Developer and Technical Optimization Specialist", image: "/images/team/michy.webp", fiverr: "https://www.fiverr.com/michyblake" },
-  { name: "Bams", role: "Marketer", image: "/images/team/bams.webp", fiverr: "https://www.fiverr.com/d_bams" }
+  { name: "Michael Olajire", role: "Lead Developer", image: "/images/team/michael-olajire.webp", fiverr: "https://www.fiverr.com/michae1_olajire" }
+] as const;
+
+export interface CertificationItem {
+  id: string;
+  title: string;
+  issuer: string;
+  certificateId: string;
+  validRange: string;
+  summary: string;
+  certificateImage: string;
+  badgeImage?: string;
+  credentialUrl: string;
+}
+
+export const certifications: readonly CertificationItem[] = [
+  {
+    id: "klaviyo-practitioner",
+    title: "Klaviyo Practitioner",
+    issuer: "Klaviyo Academy",
+    certificateId: "201370403",
+    validRange: "Nov 21, 2026 – Nov 21, 2028",
+    summary:
+      "Recognizes full mastery of Klaviyo retention workflows, customer segmentation, lifecycle email and SMS automation, and revenue attribution for ecommerce storefronts.",
+    certificateImage: "/assets/aistudio/image_60045b50.png",
+    badgeImage: "/assets/aistudio/08dc62da-1451-41b4-a38c-d42937fe14cd_094fa25d.png",
+    credentialUrl: "https://credential.klaviyo.com/05e4c011-16de-4a95-933a-e9916219b331#acc.IuVqdtnF"
+  }
 ] as const;

@@ -1,5 +1,6 @@
 import { AiseoBrief } from "@/components/AiseoBrief";
 import { AvariSpotlight } from "@/components/AvariSpotlight";
+import { CertificationsSection } from "@/components/CertificationsSection";
 import { CollaborationNotice } from "@/components/CollaborationNotice";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -67,6 +68,7 @@ export default function Home() {
           <TransformationVideos />
           <AvariSpotlight />
           <TeamSection />
+          <CertificationsSection />
           <CollaborationNotice />
           <ContactSection />
         </ThreadedStoryPath>
