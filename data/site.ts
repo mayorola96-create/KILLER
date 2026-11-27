@@ -108,12 +108,20 @@ export interface CertificationItem {
   id: string;
   title: string;
   issuer: string;
+  idLabel?: string;
   certificateId: string;
+  dateLabel?: string;
   validRange: string;
   summary: string;
   certificateImage: string;
+  imageWidth: number;
+  imageHeight: number;
   badgeImage?: string;
+  sealValue?: string;
+  sealCaption?: string;
   credentialUrl: string;
+  actionLabel?: string;
+  tooltipText?: string;
 }
 
 export const certifications: readonly CertificationItem[] = [
@@ -121,12 +129,37 @@ export const certifications: readonly CertificationItem[] = [
     id: "klaviyo-practitioner",
     title: "Klaviyo Practitioner",
     issuer: "Klaviyo Academy",
+    idLabel: "Certificate ID",
     certificateId: "201370403",
+    dateLabel: "Validity",
     validRange: "Nov 21, 2026 – Nov 21, 2028",
     summary:
       "Recognizes full mastery of Klaviyo retention workflows, customer segmentation, lifecycle email and SMS automation, and revenue attribution for ecommerce storefronts.",
     certificateImage: "/assets/aistudio/image_60045b50.png",
+    imageWidth: 599,
+    imageHeight: 454,
     badgeImage: "/assets/aistudio/08dc62da-1451-41b4-a38c-d42937fe14cd_094fa25d.png",
-    credentialUrl: "https://credential.klaviyo.com/05e4c011-16de-4a95-933a-e9916219b331#acc.IuVqdtnF"
+    credentialUrl: "https://credential.klaviyo.com/05e4c011-16de-4a95-933a-e9916219b331#acc.IuVqdtnF",
+    actionLabel: "Verify Credential",
+    tooltipText: "Independently verifiable through Klaviyo Academy’s official credential portal."
+  },
+  {
+    id: "mailchimp-foundations",
+    title: "Mailchimp Foundations",
+    issuer: "Mailchimp Certified",
+    idLabel: "Completion ID",
+    certificateId: "439548344",
+    dateLabel: "Completed · Score",
+    validRange: "Nov 27, 2026 · 94/100",
+    summary:
+      "Certifies mastery of Mailchimp Foundations across audience segmentation, automated customer journeys, campaign strategy, and ecommerce retention marketing.",
+    certificateImage: "/images/certifications/mailchimp-foundations.png",
+    imageWidth: 1200,
+    imageHeight: 1105,
+    sealValue: "94%",
+    sealCaption: "Certified",
+    credentialUrl: "/assets/aistudio/foundation_certificate_3ef3128b.pdf",
+    actionLabel: "View Certificate PDF",
+    tooltipText: "Official Mailchimp Foundations Final Assessment certificate (Completion ID: 439548344)."
   }
 ] as const;
